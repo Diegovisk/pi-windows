@@ -19,7 +19,9 @@
     "test:unit": "node --test tests/unit/*.test.mjs",
     "test:mock": "node tests/e2e/mock-e2e.mjs",
     "test:live": "node tests/e2e/live-e2e.mjs",
-    "doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/win-doctor.ps1"
+    "doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/win-doctor.ps1",
+    "prepublishOnly": "npm run test:unit",
+    "dry-publish": "npm publish --dry-run --access public"
   },
   "pi": {
     "extensions": ["./index.ts"]

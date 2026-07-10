@@ -4,14 +4,24 @@ Windows environment diagnostics, bash command normalization, and ACL remediation
 
 ## Install
 
-Add to `~/.pi/agent/settings.json`:
+### npm (recommended)
+
+```bash
+pi install npm:pi-windows@1.0.1
+```
+
+Or add to `~/.pi/agent/settings.json`:
 
 ```json
 {
-  "packages": [
-    "..\\..\\projects\\pi-windows"
-  ]
+  "packages": ["npm:pi-windows"]
 }
+```
+
+### git
+
+```bash
+pi install git:github.com/Diegovisk/pi-windows@main
 ```
 
 Then `/reload` in pi.
