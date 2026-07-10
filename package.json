@@ -1,0 +1,38 @@
+{
+  "name": "pi-windows",
+  "version": "1.0.1",
+  "description": "Windows environment diagnostics, bash normalization, and ACL remediation for pi.dev",
+  "author": "Diegovisk",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.ts",
+  "files": [
+    "README.md",
+    "index.ts",
+    "lib/",
+    "scripts/",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "node tests/run-all.mjs",
+    "test:unit": "node --test tests/unit/*.test.mjs",
+    "test:mock": "node tests/e2e/mock-e2e.mjs",
+    "test:live": "node tests/e2e/live-e2e.mjs",
+    "doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/win-doctor.ps1"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "windows",
+    "git-bash",
+    "msys"
+  ]
+}
