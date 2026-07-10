@@ -1,5 +1,5 @@
 {
-  "name": "pi-windows",
+  "name": "@diegovisk/pi-windows",
   "version": "1.0.1",
   "description": "Windows environment diagnostics, bash normalization, and ACL remediation for pi.dev",
   "author": "Diegovisk",

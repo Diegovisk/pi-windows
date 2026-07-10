@@ -7,14 +7,14 @@ Windows environment diagnostics, bash command normalization, and ACL remediation
 ### npm (recommended)
 
 ```bash
-pi install npm:pi-windows@1.0.1
+pi install npm:@diegovisk/pi-windows@1.0.1
 ```
 
 Or add to `~/.pi/agent/settings.json`:
 
 ```json
 {
-  "packages": ["npm:pi-windows"]
+  "packages": ["npm:@diegovisk/pi-windows"]
 }
 ```
 
